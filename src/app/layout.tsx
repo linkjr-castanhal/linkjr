@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer/'
 import { Navbar } from '@/components/navbar/'
+import { ThemeProvider } from '@/components/providers/theme-provider'
 import { Red_Hat_Display as RedHatDisplay } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/config'
@@ -47,13 +48,24 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className={redHatDisplay.className}>
+    <html
+      lang="pt-BR"
+      className={redHatDisplay.className}
+      suppressHydrationWarning
+    >
       <body className="relative h-full antialiased">
-        <div className="flex min-h-screen w-full flex-col">
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen w-full flex-col">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )
