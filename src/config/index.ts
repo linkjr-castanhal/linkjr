@@ -16,15 +16,15 @@ export const PAGES = [
 export const SOCIAL = [
   {
     label: 'Instagram',
-    href: '/',
+    href: 'https://www.instagram.com/linkjr.tech',
   },
   {
     label: 'Linkedin',
-    href: '/',
+    href: 'https://www.linkedin.com/company/linkjr/',
   },
   {
-    label: 'Discord',
-    href: '/',
+    label: 'Github',
+    href: 'https://github.com/linkjrcastanhal',
   },
 ]
 

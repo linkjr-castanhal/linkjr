@@ -1,13 +1,14 @@
-import { Button, buttonVariants } from '@/components/shadcn-ui/button'
+import { buttonVariants } from '@/components/shadcn-ui/button'
 import { PAGES } from '@/config'
-import { Github, MoonStar } from 'lucide-react'
+import { Github } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MobileNav } from './mobile-nav'
+import { ThemeModeButton } from '../shadcn-ui/theme-mode'
 
 export function Navbar() {
   return (
-    <header className="h-16 w-full border-b bg-stone-50">
+    <header className="h-16 w-full border-b bg-background-secundary">
       <div className="width-wrapper flex h-full items-center">
         <Link href="/">
           <Image
@@ -32,9 +33,7 @@ export function Navbar() {
           <div className="h-4 w-0.5 bg-border"></div>
 
           <div className="space-x-3 text-muted-foreground">
-            <Button variant="ghost" size="icon">
-              <MoonStar className="size-5" />
-            </Button>
+            <ThemeModeButton />
 
             <Link
               href="https://github.com/linkjrcastanhal/linkjr"
