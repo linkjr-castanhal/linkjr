@@ -1,3 +1,4 @@
+'use client'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { ReactNode, useEffect } from 'react'
@@ -10,7 +11,7 @@ export const AOSProvider = ({ children }: AOSProviderProps) => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duração da animação
-      once: true, // Anima uma única vez
+      once: false, // Anima uma única vez
     })
   }, [])
 

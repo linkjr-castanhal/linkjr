@@ -4,6 +4,7 @@ import { Red_Hat_Display as RedHatDisplay } from 'next/font/google'
 import './globals.css'
 import { siteConfig } from '@/config'
 import { Metadata } from 'next'
+import { AOSProvider } from '@/components/providers/AOSProvider'
 
 const redHatDisplay = RedHatDisplay({ subsets: ['latin'] })
 
@@ -49,11 +50,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={redHatDisplay.className}>
       <body className="relative h-full antialiased">
-        <div className="flex min-h-screen w-full flex-col">
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <AOSProvider>
+          <div className="flex min-h-screen w-full flex-col">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </AOSProvider>
       </body>
     </html>
   )

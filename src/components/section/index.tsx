@@ -31,9 +31,13 @@ export function Section({
   className,
   background,
   padding,
-}: SectionProps) {
+  dataAos,
+}: SectionProps & { dataAos?: string }) {
   return (
-    <section className={SectionVariants({ background, padding })}>
+    <section
+      className={SectionVariants({ background, padding })}
+      data-aos={dataAos}
+    >
       <div
         className={cn(
           'width-wrapper flex flex-col items-center justify-center gap-16 text-center',
