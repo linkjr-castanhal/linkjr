@@ -15,9 +15,7 @@ export function Footer() {
             className="h-12"
             data-aos="fade-down"
           />
-          <p data-aos="fade-right">
-            Conectando ideias, impulsionando soluções.
-          </p>
+          <p>Conectando ideias, impulsionando soluções.</p>
           <p className="text-xs">
             &copy; 2024 LinkJR. Todos os direitos reservados.
           </p>
@@ -35,7 +33,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4" data-aos="fade-left">
+          <div className="space-y-4" data-aos="fade-up">
             <h4 className="font-semibold">Social</h4>
             <ul className="space-y-1">
               {SOCIAL.map((social) => (

@@ -21,7 +21,6 @@ export function CallToAction() {
           </p>
         </div>
         <Link
-          data-aos="fade-left"
           className={buttonVariants({ variant: 'secondary' })}
           href="/vagas"
         >

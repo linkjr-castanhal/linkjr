@@ -29,7 +29,7 @@ export function FAQ() {
     <Section>
       <div className="max-w-3xl space-y-4">
         <h2 data-aos="fade-right">FAQ</h2>
-        <p className="text-lg text-muted-foreground" data-aos="fade-left">
+        <p className="text-lg text-muted-foreground">
           Aqui você encontrará respostas para as duvidas mais frequentes sobre a
           LinkJr
         </p>
