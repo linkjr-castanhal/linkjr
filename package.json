@@ -20,6 +20,7 @@
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@react-email/components": "0.0.25",
+    "aos": "^2.3.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.2.1",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
