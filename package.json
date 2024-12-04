@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "email dev --dir src/emails"
+    "lint-fix": "next lint --fix",
+    "email": "email dev --dir src/emails",
+    "ci": "next lint --fix && next lint && next build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

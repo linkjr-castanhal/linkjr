@@ -1,9 +1,9 @@
 'use client'
 
-import { useTheme } from "next-themes"
+import { useTheme } from 'next-themes'
 import { Button } from '@/components/shadcn-ui/button'
 import { MoonStar, Sun } from 'lucide-react'
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
 
 export function ThemeModeButton() {
   const { theme, setTheme } = useTheme()
@@ -30,7 +30,11 @@ export function ThemeModeButton() {
       onClick={handleThemeToggle}
       aria-label={`Mudar para o modo ${isLightTheme ? 'escuro' : 'claro'}`}
     >
-      {isLightTheme ? <MoonStar className="size-5" /> : <Sun className="size-5" />}
+      {isLightTheme ? (
+        <MoonStar className="size-5" />
+      ) : (
+        <Sun className="size-5" />
+      )}
     </Button>
   )
 }
