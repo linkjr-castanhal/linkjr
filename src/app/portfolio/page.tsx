@@ -1,4 +1,9 @@
-export default function QualquerPage() {
-    return <h1>Portfolio, page normal</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem officiis repellendus qui, animi, totam enim veniam consequatur cumque reprehenderit necessitatibus. Provident, iste. Eligendi quas repellendus inventore facere fuga magni!</p>
-}
+export default function Page() {
+    return (
+      <div>
+        <h1>Portfolio, rota normal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quidem facilis voluptates veniam illum! Dolorem, voluptas dolores aut illo pariatur sequi maxime culpa repudiandae assumenda hic dolor accusamus temporibus vel.</p>
+      </div>
+    );
+  }
+  
