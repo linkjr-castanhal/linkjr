@@ -1,5 +1,5 @@
 // prettier-ignore
-export function Consultoria() {
+export default function Consultoria() {
   return (
       <>
       <h1>Consultoria em TI</h1>

@@ -1,5 +1,5 @@
 // prettier-ignore
-export function Sistemas() {
+export default function Sistemas() {
   return (
       <>
       <h1>Sistemas Embarcados</h1>

@@ -1,5 +1,5 @@
 // prettier-ignore
-export function Marketing() {
+export default function Marketing() {
   return (
       <>
       <h1>Marketing Digital</h1>

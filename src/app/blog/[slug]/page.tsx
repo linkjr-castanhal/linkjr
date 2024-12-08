@@ -1,5 +1,5 @@
 // prettier-ignore
-export function Blog() {
+export default function Blog() {
   return (
       <>
       <h1>Blog</h1>
