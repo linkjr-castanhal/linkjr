@@ -1,5 +1,5 @@
 // prettier-ignore
-export default function Solucoes() {
+export function Solucoes() {
   return (
       <>
       <h1>Soluçoes Digitais</h1>
