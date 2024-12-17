@@ -20,13 +20,16 @@ export function Team() {
   return (
     <Section>
       <div className="max-w-3xl space-y-4">
-        <h2>Nosso time</h2>
-        <p className="text-lg text-muted-foreground">
+        <h2 data-aos="fade-right">Nosso time</h2>
+        <p className="text-lg text-muted-foreground" data-aos="fade-up">
           Saiba mais sobre as incríveis pessoas que estão no nosso time
         </p>
       </div>
-
-      <Carousel className="w-full" plugins={[plugin.current]}>
+      <Carousel
+        className="w-full"
+        plugins={[plugin.current]}
+        data-aos="fade-up"
+      >
         <CarouselContent>
           {TEAM.map((item) => (
             <CarouselItem

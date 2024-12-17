@@ -1,10 +1,11 @@
 import { Footer } from '@/components/footer/'
 import { Navbar } from '@/components/navbar/'
 import { ThemeProvider } from '@/components/providers/theme-provider'
+import { AOSProvider } from '@/components/providers/AOSProvider'
 import { Red_Hat_Display as RedHatDisplay } from 'next/font/google'
-import './globals.css'
 import { siteConfig } from '@/config'
 import { Metadata } from 'next'
+import '@/assets/css/global.css'
 
 const redHatDisplay = RedHatDisplay({ subsets: ['latin'] })
 
@@ -56,15 +57,17 @@ export default function RootLayout({
       <body className="relative h-full antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen w-full flex-col">
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-          </div>
+          <AOSProvider>
+            <div className="flex min-h-screen w-full flex-col">
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </div>
+          </AOSProvider>
         </ThemeProvider>
       </body>
     </html>

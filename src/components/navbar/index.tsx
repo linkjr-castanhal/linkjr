@@ -8,7 +8,7 @@ import { ThemeModeButton } from '../shadcn-ui/theme-mode'
 
 export function Navbar() {
   return (
-    <header className="h-16 w-full border-b bg-stone-50">
+    <header className="h-16 w-full border-b bg-background-secundary">
       <div className="width-wrapper flex h-full items-center">
         <Link href="/">
           <Image

@@ -28,7 +28,7 @@ export function FAQ() {
   return (
     <Section>
       <div className="max-w-3xl space-y-4 ">
-        <h2>FAQ</h2>
+        <h2 data-aos="fade-right">FAQ</h2>
         <p className="text-lg text-muted-foreground">
           Aqui você encontrará respostas para as duvidas mais frequentes sobre a
           LinkJr
@@ -39,13 +39,14 @@ export function FAQ() {
         type="single"
         collapsible
         className="w-full max-w-3xl text-start"
+        data-aos="fade-up"
       >
         {QUESTIONS.map((item, i) => (
           <AccordionItem
             className={'mb-3 rounded-2xl border px-4 last:mb-0 hover:bg-border'}
             value={`item-${i}`}
             key={i}
-          >
+           data-aos="fade-down">
             <AccordionTrigger className={'text-start'}>
               {item.title}
             </AccordionTrigger>
