@@ -1,22 +1,30 @@
 export const PAGES = [
   {
-    label: 'Home',
-    href: '/',
+    label: 'Sobre',
+    href: '/sobre',
+  },
+  {
+    label: 'Serviços',
+    href: '/servicos',
   },
   {
     label: 'Vagas',
     href: '/vagas',
   },
   {
-    label: 'Contato',
-    href: '/contato',
+    label: 'Portfólio',
+    href: '/portfolio',
+  },
+  {
+    label: 'Blog',
+    href: '/blog',
   },
 ]
 
 export const SOCIAL = [
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/linkjr.tech',
+    href: 'https://www.instagram.com/linkjrcastanhal',
   },
   {
     label: 'Linkedin',
@@ -24,7 +32,7 @@ export const SOCIAL = [
   },
   {
     label: 'Github',
-    href: 'https://github.com/linkjrcastanhal',
+    href: 'https://github.com/linkjr-castanhal',
   },
 ]
 
@@ -78,7 +86,7 @@ export const TEAM = [
 
 export const siteConfig = {
   name: 'LinkJr',
-  url: 'https://linkjr.vercel.app',
+  url: 'https://linkjr.com.br',
   description: 'Conectando ideias, Impulsionando soluções',
   ogImage: '/og.jpg',
 }
