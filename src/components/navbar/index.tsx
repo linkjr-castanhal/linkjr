@@ -1,15 +1,13 @@
 import { buttonVariants } from '@/components/shadcn-ui/button'
 import { PAGES } from '@/config'
-import { Github } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MobileNav } from './mobile-nav'
-import { ThemeModeButton } from '../shadcn-ui/theme-mode'
 
 export function Navbar() {
   return (
-    <header className="h-16 w-full border-b bg-background-secundary">
-      <div className="width-wrapper flex h-full items-center">
+    <header className="sticky top-0 z-50 w-full bg-background backdrop-blur supports-[backdrop-filter]:bg-background/80">
+      <div className="width-wrapper flex h-16 items-center justify-between">
         <Link href="/">
           <Image
             src="/images/linkjr.svg"
@@ -19,30 +17,25 @@ export function Navbar() {
           />
         </Link>
 
-        <div className="ml-auto hidden items-center gap-6 md:flex">
-          <nav>
-            <ul className="flex gap-8">
-              {PAGES.map((page) => (
-                <li key={page.label}>
-                  <Link href={page.href}>{page.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+        <nav className="absolute right-1/2 hidden translate-x-1/2 lg:block">
+          <ul className="flex gap-8">
+            {PAGES.map((page) => (
+              <li key={page.label}>
+                <Link href={page.href}>{page.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-          <div className="h-4 w-0.5 bg-border"></div>
-
-          <div className="space-x-3 text-muted-foreground">
-            <ThemeModeButton />
-
-            <Link
-              href="https://github.com/linkjrcastanhal/linkjr"
-              className={buttonVariants({ variant: 'ghost', size: 'icon' })}
-            >
-              <Github className="size-5" />
-            </Link>
-          </div>
-        </div>
+        <Link
+          href="/contato"
+          className={buttonVariants({
+            className: 'hidden lg:flex',
+            size: 'sm',
+          })}
+        >
+          Entrar em contato
+        </Link>
 
         <MobileNav />
       </div>
