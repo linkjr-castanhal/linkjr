@@ -1,5 +1,5 @@
 import { Section } from '@/components/section'
-import { ContactForm } from '@/components/vagas/contact-form'
+import { ContactForm } from '@/app/contato/components/contact-form'
 import Image from 'next/image'
 
 export default function Contact() {

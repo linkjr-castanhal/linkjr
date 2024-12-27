@@ -2,7 +2,7 @@ import { buttonVariants } from '@/components/shadcn-ui/button'
 import { PAGES } from '@/config'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MobileNav } from './mobile-nav'
+import { MobileNav } from '@/components/mobile-nav'
 
 export function Navbar() {
   return (

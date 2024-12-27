@@ -1,6 +1,6 @@
 import { Section } from '@/components/section'
 import Link from 'next/link'
-import { buttonVariants } from '../../shadcn-ui/button'
+import { buttonVariants } from '@/components/shadcn-ui/button'
 
 export function HeroSection() {
   return (
