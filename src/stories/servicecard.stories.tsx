@@ -11,5 +11,14 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  args: {},
+  args: {
+    children: (
+      <div className="flex h-56 w-full items-center justify-center bg-white">
+        Conteúdo de imagem ou componente interativo
+      </div>
+    ),
+    title: 'Lorem ipsum dolor sit amet',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit ad eligendi qui repellendus?',
+  },
 }
