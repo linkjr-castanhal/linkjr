@@ -8,14 +8,17 @@ export function HeroSection() {
   return (
     <div className="relative flex h-[calc(100vh-4rem)] flex-col justify-center bg-gradient-to-b from-[#FFF7ED]/30 to-[#FFEDD5]/30">
       <Section>
-        <Star color="#EA580C" className="absolute right-1/3 top-0 rotate-12" />
         <Star
-          color="#ea580c"
-          className="absolute bottom-0 right-1/4 rotate-3"
+          color="#EA580C"
+          className="animate-spin-slow absolute right-1/3 top-0"
         />
         <Star
           color="#ea580c"
-          className="absolute bottom-0 left-1/4 -rotate-12"
+          className="animate-spin-slow absolute bottom-0 right-1/4"
+        />
+        <Star
+          color="#ea580c"
+          className="animate-spin-slow absolute bottom-0 left-1/4"
         />
         <div className="flex flex-col items-center justify-center gap-4">
           <Badge className="flex gap-1" data-aos="fade-up">
