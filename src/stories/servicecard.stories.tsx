@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import Index from '../components/home/services/service-card/index'
+import Index from '../app/(home)/components/service-card'
 
 const meta = {
   component: Index,

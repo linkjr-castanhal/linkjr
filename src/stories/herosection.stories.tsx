@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { HeroSection } from '../components/home/hero-section/index'
+import { HeroSection } from '../app/(home)/components/hero-section'
 
 const meta = {
   component: HeroSection,
