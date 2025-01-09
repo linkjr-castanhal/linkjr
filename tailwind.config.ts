@@ -40,10 +40,14 @@ const config: Config = {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          hover: 'hsl(var(--primary-hover))',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
+        },
+        tertiary: {
+          DEFAULT: 'hsl(var(--tertiary))',
         },
         muted: {
           DEFAULT: 'hsl(var(--muted))',
@@ -56,6 +60,13 @@ const config: Config = {
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
+        },
+        outline: {
+          hover: 'hsl(var(--outline-hover))',
+        },
+        footer: {
+          DEFAULT: 'hsl(var(--footer))',
+          foreground: 'hsl(var(--footer-foreground))',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
