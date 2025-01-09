@@ -30,7 +30,7 @@ export function CookieBanner() {
   }
 
   return (
-    <div className="bg-background-card fixed bottom-0 flex h-auto w-full flex-col gap-3 rounded px-5 py-3 text-sm font-medium shadow ring-1 ring-border sm:max-w-xl sm:flex-row sm:justify-between md:items-center">
+    <div className="fixed bottom-0 flex h-auto w-full flex-col gap-3 rounded bg-background-card px-5 py-3 text-sm font-medium shadow ring-1 ring-border sm:max-w-xl sm:flex-row sm:justify-between md:items-center">
       <div className="flex items-center gap-2">
         <Image
           src="/images/icons/cookie.svg"
