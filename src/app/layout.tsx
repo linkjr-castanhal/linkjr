@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer/'
 import { Navbar } from '@/components/navbar/'
+import { CookieBanner } from '@/components/cookie-banner'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { AOSProvider } from '@/components/providers/AOSProvider'
 import { Red_Hat_Display as RedHatDisplay } from 'next/font/google'
@@ -66,6 +67,7 @@ export default function RootLayout({
               <Navbar />
               <main>{children}</main>
               <Footer />
+              <CookieBanner />
             </div>
           </AOSProvider>
         </ThemeProvider>
