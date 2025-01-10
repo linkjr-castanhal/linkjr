@@ -1,5 +1,5 @@
-import { Footer } from '@/components/footer/'
-import { Navbar } from '@/components/navbar/'
+import { Footer } from '@/components/footer'
+import { Navbar } from '@/components/navbar'
 import { CookieBanner } from '@/components/cookie-banner'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { AOSProvider } from '@/providers/AOSProvider'
