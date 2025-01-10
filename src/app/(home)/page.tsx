@@ -1,8 +1,8 @@
-import { CallToAction } from '@/components/home/call-to-action'
-import { FAQ } from '@/components/home/faq'
-import { HeroSection } from '@/components/home/hero-section'
-import { Services } from '@/components/home/services'
-import { Team } from '@/components/home/team'
+import { CallToAction } from './components/call-to-action'
+import { FAQ } from './components/faq'
+import { HeroSection } from './components/hero-section'
+import { Services } from './components/services'
+import { Team } from './components/team'
 
 export default function Home() {
   return (
