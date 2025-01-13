@@ -18,12 +18,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description = 'Websites, sistemas e apps personalizados para impulsionar sua empresa.',
 }) => {
   return (
-    <Card className="w-full border border-[#FDBA74] bg-[#fdefe7]">
+    <Card className="w-full border border-secondary bg-tertiary">
       <CardContent className="min-h-64">{children}</CardContent>
       <div className="relative">
-        <div className="absolute bottom-36 left-0 h-12 w-full bg-gradient-to-t from-[#fdefe7] to-transparent lg:bottom-28" />
+        <div className="absolute bottom-36 left-0 h-12 w-full bg-gradient-to-t from-tertiary to-transparent lg:bottom-28" />
         <CardFooter className="flex flex-col items-start gap-3">
-          <CardTitle className="relative z-10 text-xl font-extrabold text-[#CD5C08]">
+          <CardTitle className="relative z-10 text-xl font-extrabold text-primary">
             {title}
           </CardTitle>
 
