@@ -7,6 +7,7 @@ import { Red_Hat_Display as RedHatDisplay } from 'next/font/google'
 import { siteConfig } from '@/config'
 import { Metadata } from 'next'
 import '@/assets/css/global.css'
+import { ThemeModeButton } from '@/components/shadcn-ui/theme-mode'
 
 const redHatDisplay = RedHatDisplay({ subsets: ['latin'] })
 
@@ -58,8 +59,7 @@ export default function RootLayout({
       <body className="relative h-full antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <AOSProvider>
@@ -68,6 +68,7 @@ export default function RootLayout({
               <main>{children}</main>
               <Footer />
               <CookieBanner />
+              <ThemeModeButton />
             </div>
           </AOSProvider>
         </ThemeProvider>
