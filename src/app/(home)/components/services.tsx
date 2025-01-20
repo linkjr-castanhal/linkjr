@@ -1,48 +1,52 @@
+import ServiceCard from '@/app/(home)/components/service-card'
 import { Section } from '@/components/section'
-import { MonitorSmartphone, Server, Users } from 'lucide-react'
+import { SectionHeader } from '@/components/section-header'
+import { CircleDollarSign } from 'lucide-react'
+import Image from 'next/image'
 
 const SERVICES = [
   {
-    Icon: MonitorSmartphone,
-    label: 'Soluções digitais',
+    title: 'Soluções digitais',
     description:
-      'Desenvolvimento de websites, sistemas e apps personalizados para impulsionar sua empresa com soluções digitais inovadoras.',
+      'Websites, sistemas e apps personalizados para impulsionar sua empresa.',
   },
   {
-    Icon: Users,
-    label: 'Consultoria em TI',
-    description:
-      'Com o apoio de especialistas na área, otimize processos, implemente tecnologias e impulsione a inovação na sua empresa.',
-  },
-  {
-    Icon: Server,
-    label: 'Sistemas embarcados',
-    description:
-      'Desenvolvemos sistemas embarcados baseados em IoT para conectar suas soluções tecnológicas de forma inteligente.',
+    title: 'Sistemas Embarcados',
+    description: 'Soluções IoT inteligentes para conectar tecnologias.',
   },
 ]
 
 export function Services() {
   return (
     <Section>
-      <h2 data-aos="fade-up">Conheça nossos serviços</h2>
-      <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-        {SERVICES.map((item) => {
-          return (
-            <div
-              key={item.label}
-              className="flex flex-col items-center justify-center"
-              data-aos="fade-up"
-            >
-              <div className="flex size-16 items-center justify-center rounded-lg bg-orange-300">
-                <item.Icon className="size-8 text-primary" />
-              </div>
+      <SectionHeader.Root>
+        <SectionHeader.Label Icon={CircleDollarSign}>
+          Faça o seu orçamento
+        </SectionHeader.Label>
+        <SectionHeader.Title>Conheça nossos serviços</SectionHeader.Title>
+        <SectionHeader.Description>
+          Estamos aqui para oferecer soluções que atendam às suas necessidades e
+          superem suas expectativas.
+        </SectionHeader.Description>
+      </SectionHeader.Root>
 
-              <h3 className="mt-4 text-xl font-semibold">{item.label}</h3>
-              <p className="mt-2 text-lg text-muted-foreground">
-                {item.description}
-              </p>
-            </div>
+      <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-2">
+        {SERVICES.map((item, i) => {
+          return (
+            <ServiceCard
+              title={item.title}
+              description={item.description}
+              key={i}
+            >
+              <div className="flex h-full items-center justify-center">
+                <Image
+                  src="/images/service-placeholder.png"
+                  alt="service"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </ServiceCard>
           )
         })}
       </div>
