@@ -24,16 +24,17 @@ export function ThemeModeButton() {
   }
 
   return (
-    <Button
-      variant="ghost"
+    <Button 
+      className="fixed bottom-6 right-6 h-10 w-10 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background transition-all flex items-center justify-center"
+      variant="primary"
       size="icon"
       onClick={handleThemeToggle}
       aria-label={`Mudar para o modo ${isLightTheme ? 'escuro' : 'claro'}`}
     >
       {isLightTheme ? (
-        <MoonStar className="size-5" />
-      ) : (
         <Sun className="size-5" />
+      ) : (
+        <MoonStar className="size-5" />
       )}
     </Button>
   )
