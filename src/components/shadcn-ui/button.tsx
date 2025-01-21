@@ -9,7 +9,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        //primary: 'bg-orange text-white font-bold py-6 px-6 rounded aria-label-"Continue"',
+        default: 
+        'bg-orange-500 py-6 px-6 rounded-[20px] py-6 px-6',
         primary: 
         'bg-orange-500 text-white font-normal rounded-[20px] hover:bg-orange-685',
         destructive:
@@ -17,13 +18,14 @@ const buttonVariants = cva(
         outline:
           'border border-orange bg-background hover:bg-accent hover:text-accent-foreground',
         secondary: 
-        'bg-transparent text-orange-500 py-2 px-4 font-medium rounded-[20px] border-2 border-orange-500 hover:bg-gray-200',
+        'bg-transparent text-orange-500 py-2 px-4 font-medium rounded-[20px] border-2 border-orange-500 hover: border-orange-700',
         ghost: 'hover:bg-accent hover:text-accent-foreground',
         link: 'text-primary underline-offset-4 hover:underline',
       },
       size: {
-        primary: 'h-14 px-8 py-2 text-lg',
-        secondary: 'h-12 px-6 py-2 text-lg',
+        default: 'h-12 px-12 py-2 text-lg',
+        primary: 'h-12 px-12 py-2 text-lg',
+        secondary: 'h-12 px-12 py-2 text-lg',
         sm: 'h-9 rounded-md px-3',
         lg: 'h-11 rounded-md px-8',
         icon: 'h-10 w-10',
@@ -31,8 +33,8 @@ const buttonVariants = cva(
   
     },
     defaultVariants: {
-      variant: 'primary',
-      size: 'primary',
+      variant: 'default',
+      size: 'default',
       
     },
   },
