@@ -6,7 +6,7 @@ import { Section } from '@/components/section'
 
 export function HeroSection() {
   return (
-    <div className="relative flex h-[calc(100vh-4rem)] flex-col justify-center bg-gradient-to-b from-[#FFF7ED]/30 to-[#FFEDD5]/30">
+    <div className="relative flex h-[calc(100vh-4rem)] flex-col justify-center bg-gradient-to-b from-[#21130d]/5 to-[#21130d]/5">
       <Section>
         <Star
           color="#EA580C"
