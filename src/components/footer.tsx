@@ -14,6 +14,7 @@ export function Footer() {
             height={51}
             className="h-12"
             data-aos="fade-down"
+            priority
           />
           <p>Conectando ideias, impulsionando soluções.</p>
           <p className="text-xs">
