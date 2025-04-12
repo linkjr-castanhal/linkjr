@@ -46,7 +46,7 @@ export function HeroSection() {
 
             <Link
               href="#servicos"
-              className={buttonVariants({ variant: 'secondary' })}
+              className={buttonVariants({ variant: 'outline' })}
             >
               Ver serviços &rarr;
             </Link>

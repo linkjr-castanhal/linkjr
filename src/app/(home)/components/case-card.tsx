@@ -31,7 +31,7 @@ export function CaseCard({
         <div className="absolute inset-0 z-10 bg-black/30 opacity-0 backdrop-blur-sm transition-all group-hover:opacity-100"></div>
         <Button
           size="sm"
-          className="absolute right-1/2 top-1/2 z-20 -translate-y-1/2 translate-x-1/2 gap-2 bg-white text-primary opacity-0 transition-all group-hover:-translate-y-1/3 group-hover:opacity-100"
+          className="absolute right-1/2 top-1/2 z-20 -translate-y-1/2 translate-x-1/2 gap-2 bg-white text-primary opacity-0 transition-all hover:bg-primary hover:text-white group-hover:-translate-y-1/3 group-hover:opacity-100"
         >
           Ver case <SquareArrowOutUpRight className="size-4" />
         </Button>

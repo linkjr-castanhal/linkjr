@@ -5,37 +5,29 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-2xl font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 
-        'bg-orange-500 py-6 px-6 rounded-[20px] py-6 px-6',
-        primary: 
-        'bg-orange-500 text-white font-normal rounded-[20px] hover:bg-orange-685',
-        destructive:
-          'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        outline:
-          'border border-orange bg-background hover:bg-accent hover:text-accent-foreground',
-        secondary: 
-        'bg-transparent text-orange-500 py-2 px-4 font-medium rounded-[20px] border-2 border-orange-500 hover: border-orange-700',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline',
+        default: 'bg-primary text-white hover:bg-primary-hover',
+        primary: 'bg-primary text-white hover:bg-primary-hover',
+        secondary: 'bg-white text-primary hover:bg-white/90',
+        ghost: 'text-primary',
+        outline: 'border border-primary text-primary px-4 py-1 hover:bg-white',
       },
       size: {
-        default: 'h-12 px-12 py-2 text-lg',
-        primary: 'h-12 px-12 py-2 text-lg',
-        secondary: 'h-12 px-12 py-2 text-lg',
+        default: 'h-12 px-3 py-1 text-sm',
+        primary: 'h-12 px-3 py-1 text-sm',
+        secondary: 'h-12 px-4 py-2 text-sm',
         sm: 'h-9 rounded-md px-3',
+        md: 'h-10 rounded-md px-4',
         lg: 'h-11 rounded-md px-8',
         icon: 'h-10 w-10',
       },
-  
     },
     defaultVariants: {
       variant: 'default',
       size: 'default',
-      
     },
   },
 )
@@ -55,10 +47,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      >{children}</Comp>
+      >
+        {children}
+      </Comp>
     )
   },
-  
 )
 
 Button.displayName = 'Button'
