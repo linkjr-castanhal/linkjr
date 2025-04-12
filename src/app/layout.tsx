@@ -8,6 +8,7 @@ import { siteConfig } from '@/config'
 import { Metadata } from 'next'
 import '@/assets/css/global.css'
 import { ThemeModeButton } from '@/components/shadcn-ui/theme-mode'
+import { PostHogProvider } from './providers'
 
 const redHatDisplay = RedHatDisplay({ subsets: ['latin'] })
 
@@ -56,23 +57,25 @@ export default function RootLayout({
       className={redHatDisplay.className}
       suppressHydrationWarning
     >
-      <body className="relative h-full antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          disableTransitionOnChange
-        >
-          <AOSProvider>
-            <div className="flex min-h-screen w-full flex-col">
-              <Navbar />
-              <main>{children}</main>
-              <Footer />
-              <CookieBanner />
-              <ThemeModeButton />
-            </div>
-          </AOSProvider>
-        </ThemeProvider>
-      </body>
+      <PostHogProvider>
+        <body className="relative h-full antialiased">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            disableTransitionOnChange
+          >
+            <AOSProvider>
+              <div className="flex min-h-screen w-full flex-col">
+                <Navbar />
+                <main>{children}</main>
+                <Footer />
+                <CookieBanner />
+                <ThemeModeButton />
+              </div>
+            </AOSProvider>
+          </ThemeProvider>
+        </body>
+      </PostHogProvider>
     </html>
   )
 }
