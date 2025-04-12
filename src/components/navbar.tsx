@@ -14,6 +14,7 @@ export function Navbar() {
             alt="Logo da LinkJR"
             width={60}
             height={25}
+            priority
           />
         </Link>
 

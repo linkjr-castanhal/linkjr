@@ -3,13 +3,9 @@
 import posthog from 'posthog-js'
 import { PostHogProvider as PHProvider } from 'posthog-js/react'
 import { useEffect } from 'react'
-import dynamic from 'next/dynamic'
+import PostHogPageView from './posthog-page-view'
 
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
-  const PostHogPageView = dynamic(() => import('./posthog-page-view'), {
-    ssr: false,
-  })
-
   useEffect(() => {
     const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY
     if (!posthogKey) {
