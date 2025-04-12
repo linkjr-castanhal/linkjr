@@ -31,7 +31,6 @@ export function Navbar() {
           href="/contato"
           className={buttonVariants({
             className: 'hidden lg:flex',
-            size: 'sm',
           })}
         >
           Entrar em contato
