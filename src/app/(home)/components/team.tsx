@@ -34,17 +34,17 @@ export function Team() {
           {TEAM.map((item) => (
             <CarouselItem
               className="basis-full min-[480px]:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5"
-              key={item.name}
+              key={item.firstName}
             >
               <Card className="flex flex-col items-center justify-center rounded-xl p-6">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  alt={item.firstName}
                   width={256}
                   height={256}
                   className="size-32 rounded-full border"
                 />
-                <p className="mt-4 text-xl font-bold">{item.name}</p>
+                <p className="mt-4 text-xl font-bold">{item.firstName}</p>
                 <p className="mt-1 text-base">{item.role}</p>
               </Card>
             </CarouselItem>

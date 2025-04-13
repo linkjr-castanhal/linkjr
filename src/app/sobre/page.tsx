@@ -1,11 +1,13 @@
+import { FAQ } from './components/faq'
+import Presentation from './components/presentation'
+import Team from './components/team'
+
 export default function About() {
   return (
-    <>
-      <h1>Sobre</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-        eligendi, odio sapiente quod quam accusamus beatae ab architecto ipsam.
-      </p>
-    </>
+    <article className="space-y-8">
+      <Presentation />
+      <Team />
+      <FAQ />
+    </article>
   )
 }
