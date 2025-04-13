@@ -1,12 +1,12 @@
 import React from 'react'
 
-interface LinkJrIconProps {
+interface StarIconProps {
   size?: number
   color?: string
   className?: string
 }
 
-const LinkJrIcon: React.FC<LinkJrIconProps> = ({
+const StarIcon: React.FC<StarIconProps> = ({
   size = 38,
   color = 'currentColor',
   className = '',
@@ -40,4 +40,4 @@ const LinkJrIcon: React.FC<LinkJrIconProps> = ({
   )
 }
 
-export default LinkJrIcon
+export default StarIcon
