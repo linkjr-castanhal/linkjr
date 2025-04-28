@@ -146,7 +146,7 @@ export const TEAM = [
     type: 'student',
     linkedin: 'dev-joao-medeiros',
     github: 'medeiros20',
-    image: `${R2_BUCKET_URL}/karol-wojtyla.webp`,
+    image: `${R2_BUCKET_URL}/joao-medeiros.webp`,
   },
   {
     firstName: 'Pedro',
@@ -155,7 +155,7 @@ export const TEAM = [
     type: 'student',
     linkedin: 'pedro-augusto-38825224b',
     github: 'pedrozxx',
-    image: `${R2_BUCKET_URL}/karol-wojtyla.webp`,
+    image: `${R2_BUCKET_URL}/pedro-porpino.webp`,
   },
   {
     firstName: 'Italo',
@@ -173,7 +173,7 @@ export const TEAM = [
     type: 'student',
     linkedin: 'nycolas-bastos-dataengineer',
     github: 'TrInfra',
-    image: `${R2_BUCKET_URL}/karol-wojtyla.webp`,
+    image: `${R2_BUCKET_URL}/nycolas-bastos.webp`,
   },
   {
     firstName: 'Gustavo',
@@ -182,7 +182,7 @@ export const TEAM = [
     type: 'student',
     linkedin: 'gustavo-nunes-data-engineer',
     github: 'gustavon10',
-    image: `${R2_BUCKET_URL}/karol-wojtyla.webp`,
+    image: `${R2_BUCKET_URL}/gustavo-nunes.webp`,
   },
   {
     firstName: 'Leandro',
